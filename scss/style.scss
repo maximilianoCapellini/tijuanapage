@@ -357,14 +357,14 @@ body{
 /*estilos contacto*/
 
 body{
-    .contenedorContacto{
+    div{ 
         display: grid;
-        grid-template-columns: 5fr;
-        grid-template-rows: 1fr 1.5fr 2fr 0.5fr;
+        grid-template-columns: 2fr;
+        grid-template-rows: 0.3fr 1fr 0.5fr 0.2fr;                  
         grid-template-areas: "headerContacto "
-                         "mainContacto "
-                         "card-group"
-                         "footerContacto";
+                             "mainContacto "
+                             "card-group"
+                             "footerContacto"; 
         .headerContacto{
             grid-area: headerContacto;
             text-align: center;
@@ -381,8 +381,7 @@ body{
             .navContacto{
              justify-content: center;
             }
-           }
-   
+        }
          .mainContacto{
          grid-area: mainContacto;
          .card-group{
@@ -395,7 +394,7 @@ body{
              grid-area: footerContacto;
              background-color: grey;
              text-align: center;
-           }                  
+           }               
         }
 
         @media screen and (max-width:600px){

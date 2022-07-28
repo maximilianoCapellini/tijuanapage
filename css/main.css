@@ -275,30 +275,30 @@ body footer {
   text-align: center; }
 
 /*estilos contacto*/
-body .contenedorContacto {
+body div {
   display: grid;
-  grid-template-columns: 5fr;
-  grid-template-rows: 1fr 1.5fr 2fr 0.5fr;
+  grid-template-columns: 2fr;
+  grid-template-rows: 0.3fr 1fr 0.5fr 0.2fr;
   grid-template-areas: "headerContacto " "mainContacto " "card-group" "footerContacto"; }
-  body .contenedorContacto .headerContacto {
+  body div .headerContacto {
     grid-area: headerContacto;
     text-align: center;
     display: flex; }
-    body .contenedorContacto .headerContacto .contactoPiePagina {
+    body div .headerContacto .contactoPiePagina {
       background-color: red; }
-    body .contenedorContacto .headerContacto .contactosTitulo {
+    body div .headerContacto .contactosTitulo {
       text-align: center;
       font-family: 'Times New Roman', Times, serif;
       font-size: 60px;
       border: 10px solid black; }
-    body .contenedorContacto .headerContacto .navContacto {
+    body div .headerContacto .navContacto {
       justify-content: center; }
-  body .contenedorContacto .mainContacto {
+  body div .mainContacto {
     grid-area: mainContacto; }
-    body .contenedorContacto .mainContacto .card-group {
+    body div .mainContacto .card-group {
       background-color: orange;
       grid-area: card-group; }
-  body .contenedorContacto .footerContacto {
+  body div .footerContacto {
     grid-area: footerContacto;
     background-color: grey;
     text-align: center; }
