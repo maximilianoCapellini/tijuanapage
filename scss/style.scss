@@ -4,6 +4,7 @@
     margin: 5px;
     box-sizing: border-box;
 }
+@import "utilities/variables";
 
 body{
     .headerHome{
@@ -11,13 +12,13 @@ body{
         grid-template-columns:7fr;
         grid-template-rows:2.5fr;
         grid-template-areas:" headerHome ";
-        background-color: grey;
+        background-color: $colorTerciario;
         grid-area: headerhome;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         .piePagina{
-            background-color: orangered;
+            background-color:$colorPrincipal;
             text-align: center;
             list-style: none;
             text-decoration: none;
@@ -49,7 +50,7 @@ body{
         }
         a{
             text-decoration:none;
-            background-color: orange;
+            background-color:$colorSecundario;
             color: black;
             text-align: center;
             list-style:none;
@@ -65,7 +66,7 @@ body{
         grid-template-columns:3.5fr 3.5fr;
         grid-template-rows:3.5fr  ;
         grid-template-areas:" divSeccion sectionRutini "; 
-        background-color: orange;
+        background-color:$colorSecundario;
         grid-area: seccionCentral ;
         font-weight: bold;
         h2{
@@ -78,7 +79,7 @@ body{
         }
         section{
             display: flex;
-            background-color: orangered;
+            background-color:$colorPrincipal;
         }
         .imagenRutini{
             animation-name: imagenRutini;
@@ -105,7 +106,7 @@ body{
         grid-template-columns:7fr;
         grid-template-rows:1fr  ;
         grid-template-areas:" footerHome ";
-        background-color: grey;
+        background-color: $colorTerciario;
         text-align: center;
         grid-area: footer ;
         font-weight: bold; 
@@ -138,7 +139,7 @@ body{
         }
     
         .headerHome{
-            background-color: orange;
+            background-color:$colorSecundario;
         }
         .menu{
             background-color: black;
@@ -162,7 +163,7 @@ body{
 
 body{
     header{
-        background-color: orange;
+        background-color: $colorSecundario;
         .ubicacionPiePagina{
             background-color: red;
             font-family: 'Times New Roman', Times, serif;
@@ -193,7 +194,7 @@ body{
             grid-area: headerProducto;
             display: flex;
             flex-wrap: wrap;
-            background-color: grey;
+            background-color:$colorTerciario;
             .productosPiePagina{
                 background-color: red;
                 font-weight: bold;
@@ -206,9 +207,9 @@ body{
                 border: 10px solid black;
             }
             .container-fluid{
-                background-color: orange;
+                background-color:$colorSecundario;
                 justify-content: space-evenly;
-                border-radius: 90px;
+                border:3px solid black;
                 .navproductos{
                     text-align: center;
                 }
@@ -228,7 +229,7 @@ body{
                     transform: scale(0);
                 }
                 to{
-                    transform: scale(0.8);
+                    transform: scale(0.7);
                 }  
             }
         }
@@ -268,7 +269,7 @@ body{
                 background-image: linear-gradient(to left, white, right);
             }
             .fernetProductosTitulo{
-                background-color: orange;
+                background-color:$colorTerciario;
                 font-size: 3vw;
                 text-align: center;
                 align-items: center;
@@ -292,7 +293,7 @@ body{
             grid-template-rows:1fr;
             grid-template-areas:"footerProductos"; 
             grid-area: footerProductos; 
-            background-color: grey;
+            background-color:$colorTerciario;
         }
 
     }
@@ -324,7 +325,7 @@ body{
 
 body{
     .headerEventos{
-        background-color: grey;
+        background-color:$colorTerciario;
         display: flex;
         flex-direction: column;
         .eventosPiePagina{
@@ -339,17 +340,17 @@ body{
             border: 10px solid black;
         }
         .navEventos{
-            background-color: grey;
+            background-color:$colorTerciario;
             font-weight: bold;
             border: 10px solid black;
         }
     }
     .conteiner-fluid{
-        background-color: orange;
+        background-color:$colorSecundario;
         padding: 100px;
     }
     footer{
-        background-color: grey;
+        background-color: $colorTerciario;
         text-align: center;
     }
 }
@@ -383,17 +384,20 @@ body{
         .mainContacto{
          grid-area: mainContacto;
          .tablaColor{
-            background-color: grey;
+            background-color:$colorTerciario;
             text-align: center;
+            border: 3px solid burlywood;
+            text-shadow: 1px black;
+            margin-top: 0px;
          }
          .card-group{
-             background-color: orange;
+             background-color: $colorSecundario;
              grid-area: card-group;
             }
            }
         .footerContacto{
              grid-area: footerContacto;
-             background-color: grey;
+             background-color:$colorTerciario;
              text-align: center;
            }               
         }
@@ -401,7 +405,7 @@ body{
 
         @media screen and (max-width:600px){
             .bodyContacto{
-                background-color: grey;
+                background-color: $colorTerciario;
             }
             .card-group{
                 display: none;
@@ -414,22 +418,11 @@ body{
             .contactosTitulo{
                 font-size: small;
                 font-weight: bold;
-                color: grey;
+                color:$colorTerciario;
             }
-             }    
+             }
 
-        
-
-     
-     
-       
-        
-    
-    
-
-
-
-    
+      
 /*estilos carrito compra*/
 body{
     header{
