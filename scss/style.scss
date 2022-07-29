@@ -356,15 +356,13 @@ body{
         
 /*estilos contacto*/
 
-body{
-    div{ 
-        display: grid;
-        grid-template-columns: 2fr;
-        grid-template-rows: 0.3fr 1fr 0.5fr 0.2fr;                  
-        grid-template-areas: "headerContacto "
-                             "mainContacto "
-                             "card-group"
-                             "footerContacto"; 
+.bodyContacto{
+    display:grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 0.3fr 1.6fr 0.1fr;
+    grid-template-areas: "headerContacto"
+    "mainContacto"
+    "footerContacto";
         .headerContacto{
             grid-area: headerContacto;
             text-align: center;
@@ -382,20 +380,24 @@ body{
              justify-content: center;
             }
         }
-         .mainContacto{
+        .mainContacto{
          grid-area: mainContacto;
+         .tablaColor{
+            background-color: grey;
+            text-align: center;
+         }
          .card-group{
              background-color: orange;
              grid-area: card-group;
             }
-         
            }
-           .footerContacto{
+        .footerContacto{
              grid-area: footerContacto;
              background-color: grey;
              text-align: center;
            }               
         }
+        
 
         @media screen and (max-width:600px){
             .bodyContacto{
@@ -414,8 +416,11 @@ body{
                 font-weight: bold;
                 color: grey;
             }
-        }
-    }
+             }    
+
+        
+
+     
      
        
         

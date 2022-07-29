@@ -275,44 +275,47 @@ body footer {
   text-align: center; }
 
 /*estilos contacto*/
-body div {
+.bodyContacto {
   display: grid;
   grid-template-columns: 2fr;
-  grid-template-rows: 0.3fr 1fr 0.5fr 0.2fr;
-  grid-template-areas: "headerContacto " "mainContacto " "card-group" "footerContacto"; }
-  body div .headerContacto {
+  grid-template-rows: 0.3fr 1.6fr 0.1fr;
+  grid-template-areas: "headerContacto" "mainContacto" "footerContacto"; }
+  .bodyContacto .headerContacto {
     grid-area: headerContacto;
     text-align: center;
     display: flex; }
-    body div .headerContacto .contactoPiePagina {
+    .bodyContacto .headerContacto .contactoPiePagina {
       background-color: red; }
-    body div .headerContacto .contactosTitulo {
+    .bodyContacto .headerContacto .contactosTitulo {
       text-align: center;
       font-family: 'Times New Roman', Times, serif;
       font-size: 60px;
       border: 10px solid black; }
-    body div .headerContacto .navContacto {
+    .bodyContacto .headerContacto .navContacto {
       justify-content: center; }
-  body div .mainContacto {
+  .bodyContacto .mainContacto {
     grid-area: mainContacto; }
-    body div .mainContacto .card-group {
+    .bodyContacto .mainContacto .tablaColor {
+      background-color: grey;
+      text-align: center; }
+    .bodyContacto .mainContacto .card-group {
       background-color: orange;
       grid-area: card-group; }
-  body div .footerContacto {
+  .bodyContacto .footerContacto {
     grid-area: footerContacto;
     background-color: grey;
     text-align: center; }
 
 @media screen and (max-width: 600px) {
-  body .bodyContacto {
+  .bodyContacto {
     background-color: grey; }
-  body .card-group {
+  .card-group {
     display: none; } }
 
 @media screen and (max-width: 300px) {
-  body .bodyContacto {
+  .bodyContacto {
     background-color: whitesmoke; }
-  body .contactosTitulo {
+  .contactosTitulo {
     font-size: small;
     font-weight: bold;
     color: grey; } }
